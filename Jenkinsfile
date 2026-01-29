@@ -33,9 +33,9 @@ node {
         docker rm ${containerName} || true
 
         docker run -d \
-            --name ${containerName} \
-            -p ${appPort}:8080 \
-            ${imageName}
+          --name ${containerName} \
+          -p ${appPort}:8080 \
+          ${imageName}
         """
     }
 }
